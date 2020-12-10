@@ -16,6 +16,8 @@ Belum mulai bikin.
 
 Belum mulai bikin.
 
+---
+
 ### Sudah selesai:
 
 #### -) camera masih tembus gedung
