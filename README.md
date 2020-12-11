@@ -4,17 +4,17 @@
 
 Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) dan bikin orbital jadi agak kacau.
 
-### To-do list:
-
-### Work-in-progress:
-
-Sudah kelar semua!
-
 ---
 
-### Sudah selesai:
+### To-do list:
 
-### 10/12/2020
+#### Work-in-progress:
+
+*Sudah kelar semua!*
+
+#### Sudah selesai:
+
+#### 10/12/2020
 
 * **camera masih tembus gedung**
 
@@ -28,7 +28,7 @@ Tidak ada masalah.
 
 Tidak ada masalah.
 
-### 11/12/2020
+#### 11/12/2020
 
 * **lampu mobil masih kacau**
 
