@@ -6,7 +6,7 @@ Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) da
 
 ### To-do list:
 
-#### W.I.P:
+#### Work-in-progress:
 
 Sudah kelar semua!
 
