@@ -1,12 +1,12 @@
 import * as THREE from './node_modules/three/build/three.module.js'
 
-//bikin asphalt
-export let createAsphalt = ()=>{
+// bikin asphalt
+export let createAsphalt = () => {
     let geometry = new THREE.PlaneGeometry(500, 500);
     let loader = new THREE.TextureLoader();
     let texture = loader.load('./assets/asphalt.jpg');
 
-    //repeat texture
+    // repeat texture
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(20, 20);
@@ -22,13 +22,13 @@ export let createAsphalt = ()=>{
     return mesh;
 }
 
-//bikin jalan
-export let createRoad = ()=>{
+// bikin jalan
+export let createRoad = () => {
     let geometry = new THREE.PlaneGeometry(30, 500);
     let loader = new THREE.TextureLoader();
     let texture = loader.load('./assets/road.jpg');
 
-    //repeat texture
+    // repeat texture
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(1, 8);
@@ -44,13 +44,13 @@ export let createRoad = ()=>{
     return mesh;
 }
 
-//bikin bangunan
-export let createBuilding = (x, z, height)=>{
+// bikin bangunan
+export let createBuilding = (x, z, height) => {
     let geometry = new THREE.BoxGeometry(25, height, 25)
     let loader = new THREE.TextureLoader();
     let texture = loader.load('./assets/building.jpg');
 
-    //repeat texture
+    // repeat texture
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.repeat.set(2, 8);
@@ -67,9 +67,9 @@ export let createBuilding = (x, z, height)=>{
     return mesh;
 }
 
-//bikin lampu jalan
-    //bikin pole
-    export let createPole = (x, z)=>{
+// bikin lampu jalan
+    // bikin pole
+    export let createPole = (x, z) => {
         let geometry = new THREE.CylinderGeometry(0.4, 0.4, 10, 32);
 
         let material = new THREE.MeshStandardMaterial({
@@ -83,8 +83,8 @@ export let createBuilding = (x, z, height)=>{
         return mesh;
     }
 
-    //bikin lamp container
-    export let createLampContainer = (x, z)=>{
+    // bikin lamp container
+    export let createLampContainer = (x, z) => {
         let geometry = new THREE.CylinderGeometry(1, 0.5, 1, 4, 1);
 
         let material = new THREE.MeshPhongMaterial({
@@ -97,8 +97,8 @@ export let createBuilding = (x, z, height)=>{
         return mesh;
     }
 
-    //bikin penutup lamp container
-    export let createLid = (x, z)=>{
+    // bikin penutup lamp container
+    export let createLid = (x, z) => {
         let geometry = new THREE.CylinderGeometry(0, 1, 1, 4, 1);
 
         let material = new THREE.MeshPhongMaterial({
@@ -111,8 +111,8 @@ export let createBuilding = (x, z, height)=>{
         return mesh;
     }
 
-    //bikin bohlam lampu
-    export let createBulb = (x, z)=>{
+    // bikin bohlam lampu
+    export let createBulb = (x, z) => {
         let geometry = new THREE.SphereGeometry(0.5, 32, 32)
 
         let material = new THREE.MeshPhongMaterial({
@@ -122,19 +122,23 @@ export let createBuilding = (x, z, height)=>{
         let mesh = new THREE.Mesh(geometry, material);
         mesh.position.set(x, 10.8, z); //-16, 10.8, 100
         mesh.castShadow = true;
+
+        mesh.material.side = THREE.BackSide
+        mesh.name = "bulb"
+
         return mesh;
     }
 
-    //bikin cahaya lampu
-    export let createLampLight = (x, z)=>{
+    // bikin cahaya lampu
+    export let createLampLight = (x, z) => {
         let lampLight = new THREE.PointLight(0xffffff, 3, 20, 1.5);
         lampLight.position.set(x, 10.8, z); //-16, 10.8, 100
         lampLight.castShadow = true;
         return lampLight;
     }
 
-//bikin lampu depan mobil
-export let createCarLight = () =>{
+// bikin lampu depan mobil
+export let createCarLight = () => {
     let helper
 
     let carLight = new THREE.SpotLight(0xffffff, 3, 40, Math.PI / 2, false, 0.5);
