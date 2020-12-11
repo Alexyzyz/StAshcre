@@ -14,7 +14,7 @@ Sudah kelar semua!
 
 ### Sudah selesai:
 
-#### 10/12/2020
+### 10/12/2020
 
 * **camera masih tembus gedung**
 
@@ -28,7 +28,7 @@ Tidak ada masalah.
 
 Tidak ada masalah.
 
-#### 11/12/2020
+### 11/12/2020
 
 * **lampu mobil masih kacau**
 
