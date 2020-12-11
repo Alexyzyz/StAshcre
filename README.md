@@ -6,13 +6,13 @@ Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) da
 
 ### To-do list:
 
-#### Work-in-progress:
+### Work-in-progress:
 
 Sudah kelar semua!
 
 ---
 
-#### Sudah selesai:
+### Sudah selesai:
 
 #### 10/12/2020
 
