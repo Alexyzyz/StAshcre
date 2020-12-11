@@ -2,7 +2,8 @@
 
 ### Note(s):
 
-Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) dan bikin orbital jadi agak kacau.
+1. Di console log bakal muncul beberapa `TypeError` message karena ada property dari mesh yang belum load yang diakses di `update()` Ga fatal sih tapi mungkin perlu diperbaiki.
+2. Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) dan bikin orbital jadi agak kacau.
 
 ---
 
