@@ -6,21 +6,17 @@ Beberapa hal yang perlu diperhatikan:
 1. Di console log bakal muncul beberapa `TypeError` message karena ada property dari mesh yang belum load yang diakses di `update()` Ga fatal sih tapi mungkin perlu diperbaiki.
 2. Camera utama gua bikin `enablePan = false` karena kayaknya ga diminta soal(?) dan bikin orbital jadi agak kacau.
 
----
-
-### To-do list
-
-#### Work-in-progress
+### Work-in-progress
 
 Daftar hal yang belum selesai:
 
-*Sudah kelar semua!*
+- [x] **sudah kelar semua!**
 
-#### Sudah selesai
+### Sudah selesai
 
 Daftar hal yang sudah selesai berdasarkan tanggal penyelesaian:
 
-#### 10/12/2020
+#### *10/12/2020*
 
 - [x] **camera masih tembus gedung**
 
@@ -34,7 +30,7 @@ Tidak ada masalah.
 
 Tidak ada masalah.
 
-#### 11/12/2020
+#### *11/12/2020*
 
 - [x] **lampu mobil masih kacau**
 
